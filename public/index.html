@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Vite App</title>
+  <!-- Add React and Babel -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <img src="/vite.svg" alt="Vite Logo" />
+  <!-- Add type="text/babel" and data-type="module" -->
+  <script type="text/babel" data-type="module">
+    import React from 'react';
+    import ReactDOM from 'react-dom/client';
+
+    const Hero = () => {
+      return <div className="w-screen h-screen">Hero</div>;
+    };
+
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      <React.StrictMode>
+        <Hero />
+      </React.StrictMode>
+    );
+  </script>
+</body>
+</html> 
